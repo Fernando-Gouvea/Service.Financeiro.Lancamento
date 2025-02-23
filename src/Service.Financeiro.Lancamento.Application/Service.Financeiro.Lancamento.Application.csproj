@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Service.Financeiro.Lancamento.Domain\Service.Financeiro.Lancamento.Domain.csproj" />
+    <ProjectReference Include="..\Service.Financeiro.Lancamento.Infrastructure\Service.Financeiro.Lancamento.Infrastructure.csproj" />
+    <ProjectReference Include="..\Service.Financeiro.Lancamento.Persistence\Service.Financeiro.Lancamento.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
