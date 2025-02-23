@@ -1,7 +1,7 @@
 ﻿using AutoFixture;
 using AutoMapper;
 using NSubstitute;
-using Service.Financeiro.Lancamento.Application.Applications.v1.AdicionarLancamento;
+using Service.Financeiro.Lancamento.Application.Command.v1.AdicionarLancamento;
 using LancamentoDb = Service.Financeiro.Lancamento.Domain.Entities.Lancamento;
 
 namespace Service.Financeiro.Lancamento.Test.Applications.v1.AdicionarLancamento.Mocks.Mapper

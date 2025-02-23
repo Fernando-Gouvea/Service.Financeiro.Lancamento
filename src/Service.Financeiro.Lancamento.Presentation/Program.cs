@@ -2,7 +2,7 @@ using AutoMapper;
 using ClosedXML.Parser;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
-using Service.Financeiro.Lancamento.Application.Applications.v1.AdicionarLancamento;
+using Service.Financeiro.Lancamento.Application.Command.v1.AdicionarLancamento;
 using Service.Financeiro.Lancamento.Application.Profiles;
 using Service.Financeiro.Lancamento.Persistence.Context;
 using Service.Financeiro.Lancamento.Persistence.Repository;
