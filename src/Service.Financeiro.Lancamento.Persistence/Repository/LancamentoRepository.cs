@@ -18,6 +18,8 @@ namespace Service.Financeiro.Lancamento.Persistence.Repository
         {
             await _context.AddAsync(lancamento);
 
+            await _context.SaveChangesAsync();
+
             return lancamento;
         }
     }
