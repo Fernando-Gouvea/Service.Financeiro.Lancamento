@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Service.Financeiro.Lancamento.Application.Applications.AdicionarLancamento;
+using Service.Financeiro.Lancamento.Application.Applications.v1.AdicionarLancamento;
 
-namespace Service.Financeiro.Lancamento.Presentation.Api.Controllers
+namespace Service.Financeiro.Lancamento.Presentation.Api.Controllers.v1
 {
     [Route("api/[controller]")]
     [ApiController]

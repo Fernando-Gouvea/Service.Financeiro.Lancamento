@@ -1,12 +1,11 @@
 ﻿using AutoMapper;
 using MassTransit;
 using MediatR;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Service.Financeiro.Lancamento.Infrastructure.Events;
 using Service.Financeiro.Lancamento.Persistence.Repository;
 using LancamentoDb = Service.Financeiro.Lancamento.Domain.Entities.Lancamento;
 
-namespace Service.Financeiro.Lancamento.Application.Applications.AdicionarLancamento
+namespace Service.Financeiro.Lancamento.Application.Applications.v1.AdicionarLancamento
 {
     public class AdicionarLancamentoCommandHandler(IMapper _mapper,
                                                    IPublishEndpoint _publishEndpoint,
