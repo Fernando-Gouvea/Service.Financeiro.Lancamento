@@ -1,26 +1,10 @@
-using AutoMapper;
 using MassTransit;
-using Microsoft.EntityFrameworkCore;
-using Service.Financeiro.Lancamento.Application.Applications.AdicionarLancamento;
-using Service.Financeiro.Lancamento.Application.Profiles;
-using Service.Financeiro.Lancamento.Persistence.Context;
-using Service.Financeiro.Lancamento.Persistence.Repository;
+using Service.Financeiro.Lancamento.Application.Applications.v1.AdicionarLancamento;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
-builder.Services.AddDbContext<LancamentoContext>(options => options.UseSqlServer("name=ConnectionStrings:SqlServerConnection"));
 builder.Services.AddControllers();
-builder.Services.AddScoped<ILancamentoRepository, LancamentoRepository>();
-builder.Services.AddSingleton<IMapper>(sp =>
-{
-    var config = new MapperConfiguration(cfg =>
-    {
-        cfg.AddProfile(new ApplicationProfile());
-    });
-    return config.CreateMapper();
-});
-
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(AdicionarLancamentoCommandHandler).Assembly);
@@ -35,18 +19,15 @@ builder.Services.AddMassTransit(bus =>
 
 });
 
+builder.Services.AddMassTransitHostedService();
+
+
 builder.Services.AddOpenApi();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
-{
     app.MapOpenApi();
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
 app.UseHttpsRedirection();
 

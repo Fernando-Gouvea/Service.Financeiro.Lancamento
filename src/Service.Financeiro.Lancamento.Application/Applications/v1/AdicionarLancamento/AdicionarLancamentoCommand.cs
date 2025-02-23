@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Service.Financeiro.Lancamento.Domain.Enuns;
 
-namespace Service.Financeiro.Lancamento.Application.Applications.AdicionarLancamento
+namespace Service.Financeiro.Lancamento.Application.Applications.v1.AdicionarLancamento
 {
     public class AdicionarLancamentoCommand : IRequest<AdicionarLancamentoCommandResponse>
     {
