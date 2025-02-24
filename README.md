@@ -110,5 +110,7 @@ Neste exemplo:
    ```bash
    https://localhost:7060/swagger/index.html
    ```
+## Melhorias:
+- Implementação de um SDK para que itens em comuns usados nos MSs sejam centralizados, podendo ser instalados via pacote Nuget.   
 
 ---
