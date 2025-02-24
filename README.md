@@ -88,21 +88,27 @@ Neste exemplo:
 ---
 
 ## Como Executar o Projeto:
-1. Clone o repositório:  
+
+1. Os projetos Service.Financeiro.Lancamento e Service.Financeiro.ConsolidadoDiario deve ser executados simultaneamente.
+
+2. Clone os repositórios do projeto:  
    ```bash
    git clone https://github.com/Fernando-Gouvea/Service.Financeiro.Lancamento.git
+  
    ```
-2. Restaure as dependências:  
+3. Entre na pasta do Projeto:  
    ```bash
-   dotnet restore
+   cd Service.Financeiro.Lancamento\src\Service.Financeiro.Lancamento.Presentation
    ```
-3. Inicie o servidor:  
+   
+4. Inicie o servidor:  
    ```bash
    dotnet run
    ```
-4. Acesse o **Swagger** para testar o endpoint:  
-   ```
-   https://localhost:7060/swagger
+   
+5. Acesse o **Swagger** no navegador:  
+   ```bash
+   https://localhost:7060/swagger/index.html
    ```
 
 ---
