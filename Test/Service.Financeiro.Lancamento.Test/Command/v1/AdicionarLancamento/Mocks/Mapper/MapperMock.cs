@@ -4,7 +4,7 @@ using NSubstitute;
 using Service.Financeiro.Lancamento.Application.Command.v1.AdicionarLancamento;
 using LancamentoDb = Service.Financeiro.Lancamento.Domain.Entities.Lancamento;
 
-namespace Service.Financeiro.Lancamento.Test.Applications.v1.AdicionarLancamento.Mocks.Mapper
+namespace Service.Financeiro.Lancamento.Test.Command.v1.AdicionarLancamento.Mocks.Mapper
 {
     public class MapperMock
     {

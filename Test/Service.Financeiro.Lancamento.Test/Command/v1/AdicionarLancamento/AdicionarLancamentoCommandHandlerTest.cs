@@ -1,10 +1,10 @@
 ﻿using AutoFixture;
 using Service.Financeiro.Lancamento.Application.Command.v1.AdicionarLancamento;
-using Service.Financeiro.Lancamento.Test.Applications.v1.AdicionarLancamento.Mocks.Mapper;
-using Service.Financeiro.Lancamento.Test.Applications.v1.AdicionarLancamento.Mocks.Publisher;
-using Service.Financeiro.Lancamento.Test.Applications.v1.AdicionarLancamento.Mocks.Repository;
+using Service.Financeiro.Lancamento.Test.Command.v1.AdicionarLancamento.Mocks.Mapper;
+using Service.Financeiro.Lancamento.Test.Command.v1.AdicionarLancamento.Mocks.Publisher;
+using Service.Financeiro.Lancamento.Test.Command.v1.AdicionarLancamento.Mocks.Repository;
 
-namespace Service.Financeiro.Lancamento.Test.Applications.v1.AdicionarLancamento
+namespace Service.Financeiro.Lancamento.Test.Command.v1.AdicionarLancamento
 {
     public class AdicionarLancamentoCommandHandlerTest
     {

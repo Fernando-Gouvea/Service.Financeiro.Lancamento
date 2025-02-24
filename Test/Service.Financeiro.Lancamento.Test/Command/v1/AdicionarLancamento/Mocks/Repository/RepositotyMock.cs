@@ -3,7 +3,7 @@ using NSubstitute;
 using Service.Financeiro.Lancamento.Persistence.Repository;
 using LancamentoDb = Service.Financeiro.Lancamento.Domain.Entities.Lancamento;
 
-namespace Service.Financeiro.Lancamento.Test.Applications.v1.AdicionarLancamento.Mocks.Repository
+namespace Service.Financeiro.Lancamento.Test.Command.v1.AdicionarLancamento.Mocks.Repository
 {
     public class RepositotyMock
     {
